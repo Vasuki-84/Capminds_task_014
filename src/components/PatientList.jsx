@@ -17,9 +17,7 @@ function PatientList() {
 
   return (
     <div className="card shadow mb-4">
-      <div className="card-header bg-info text-white">
-        API Patient List
-      </div>
+      <div className="card-header bg-info text-white">API Patient List</div>
 
       <div className="card-body">
         <ul className="list-group">

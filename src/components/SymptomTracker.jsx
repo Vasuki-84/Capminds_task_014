@@ -28,19 +28,13 @@ function SymptomTracker() {
 
   return (
     <div className="card shadow mb-4">
-      <div className="card-header bg-warning">
-        Symptom Tracker (useRef)
-      </div>
+      <div className="card-header bg-warning">Symptom Tracker (useRef)</div>
 
       <div className="card-body">
-        <h5 className="mb-3">
-          useState vs useRef Experiment
-        </h5>
+        <h5 className="mb-3">useState vs useRef Experiment</h5>
 
         <div className="mb-3">
-          <label className="form-label">
-            useState Input
-          </label>
+          <label className="form-label">useState Input</label>
 
           <input
             type="text"
@@ -52,9 +46,7 @@ function SymptomTracker() {
         </div>
 
         <div className="mb-4">
-          <label className="form-label">
-            useRef Input
-          </label>
+          <label className="form-label">useRef Input</label>
 
           <input
             type="text"
@@ -64,10 +56,7 @@ function SymptomTracker() {
           />
         </div>
 
-        <button
-          className="btn btn-primary mb-3"
-          onClick={addSymptom}
-        >
+        <button className="btn btn-primary mb-3" onClick={addSymptom}>
           Add Symptom
         </button>
 
@@ -78,10 +67,7 @@ function SymptomTracker() {
         ) : (
           <ul className="list-group">
             {symptoms.map((symptom, index) => (
-              <li
-                key={index}
-                className="list-group-item"
-              >
+              <li key={index} className="list-group-item">
                 {symptom}
               </li>
             ))}
