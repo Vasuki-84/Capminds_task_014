@@ -13,7 +13,7 @@ function SymptomTracker() {
   // Auto focus
   useEffect(() => {
     symptomRef.current.focus();
-  }, []);
+  },[]);
 
   const addSymptom = () => {
     const symptom = symptomRef.current.value;
